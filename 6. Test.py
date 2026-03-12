@@ -60,8 +60,6 @@ def get_test_plot(X_test, y_test):
 test_predicted, test_RMSE = get_test_plot(X_test, y_test)
 test_predicted.to_csv("test_predicted.csv")
 
-# ######### Test dataset #########
-# ##### For last set #########
 # # Rescale back the real dataset
 #
 # X_scaler = load(open('X_scaler.pkl', 'rb'))
