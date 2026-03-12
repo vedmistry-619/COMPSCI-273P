@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
 from pickle import dump
 
-dataset = pd.read_csv('Finaldata_with_Fourier.csv', parse_dates=['Date'])
+dataset = pd.read_csv('Final_Fourier.csv', parse_dates=['Date'])
 news = pd.read_csv("News.csv", parse_dates=["Date"])
 
 
@@ -108,4 +108,5 @@ np.save("yc_test.npy", yc_test)
 np.save('index_train.npy', index_train)
 np.save('index_test.npy', index_test)
 np.save('train_predict_index',index_train)
+
 np.save('test_predict_index',index_test)
