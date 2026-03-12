@@ -181,7 +181,7 @@ predict_result = pd.DataFrame()
 for i in range(rescaled_Predicted_price.shape[0]):
     y_predict = pd.DataFrame(rescaled_Predicted_price[i], columns=["predicted_price"], index=train_predict_index[i:i+output_dim])
     predict_result = pd.concat([predict_result, y_predict], axis=1, sort=False)
-#
+    
 real_price = pd.DataFrame()
 for i in range(rescaled_Real_price.shape[0]):
     y_train = pd.DataFrame(rescaled_Real_price[i], columns=["real_price"], index=train_predict_index[i:i+output_dim])
